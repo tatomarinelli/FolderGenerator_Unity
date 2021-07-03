@@ -1,2 +1,2 @@
-# foldergenerator_unity
+# Custom Folder Generator
 Custom Folder Generator for Unity Editor. Helps on the everyday workflow.
