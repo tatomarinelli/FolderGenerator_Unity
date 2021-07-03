@@ -1,4 +1,4 @@
-# Custom Folder Generator
+# Custom Folder Generator - Unity Tool
 Custom Folder Generator for Unity Editor.
 
 This tool is useful for creating a pre defined folder structure while working on Unity Editor. You can create multiple prefab with different folder configurations and with just one click you will have the structure created.
@@ -12,3 +12,6 @@ Result:
 
 ![project](https://user-images.githubusercontent.com/39309862/124362408-f13ca800-dc0a-11eb-9409-aa2fce352753.png)
 
+To Do:
+
+Make better validations (It was made in one night, for sure I'm not handling all the possible errors.)
