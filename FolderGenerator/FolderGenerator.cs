@@ -94,11 +94,14 @@ public class FolderGenerator : MonoBehaviour
         // Creation of the root folder
         string currentRoot = AssetDatabase.CreateFolder("Assets", rootFolder.GetName());
         string currentRootPath = AssetDatabase.GUIDToAssetPath(currentRoot);
-
-        // Create the asset
-        AssetDatabase.CreateAsset(ScriptableObject.CreateInstance(asset.GetType()), currentRootPath + "/" + asset.GetType().ToString() + ".asset");
-        Debug.Log("<b>Asset created! Path: " + currentRootPath + "/" + asset.GetType().ToString() + ".asset</b>\n");
-
+        
+        if(asset != null)
+        {
+            // Create the asset
+            AssetDatabase.CreateAsset(ScriptableObject.CreateInstance(asset.GetType()), currentRootPath + "/" + asset.GetType().ToString() + ".asset");
+            Debug.Log("<b>Asset created! Path: " + currentRootPath + "/" + asset.GetType().ToString() + ".asset</b>\n");
+        }
+        
         // Cycle through subroots folders structure while creating them.
         foreach (var f in folders)
         {
