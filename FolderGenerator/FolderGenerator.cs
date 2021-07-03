@@ -97,7 +97,7 @@ public class FolderGenerator : MonoBehaviour
 
         // Create the asset
         AssetDatabase.CreateAsset(ScriptableObject.CreateInstance(asset.GetType()), currentRootPath + "/" + asset.GetType().ToString() + ".asset");
-        Debug.Log("<b>Asset created! Path: " + currentRootPath + "</b>\n");
+        Debug.Log("<b>Asset created! Path: " + currentRootPath + "/" + asset.GetType().ToString() + ".asset</b>\n");
 
         // Cycle through subroots folders structure while creating them.
         foreach (var f in folders)
